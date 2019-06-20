@@ -72,3 +72,13 @@ PENCE_VALUE_MAPPING = {
     '1': 100,
     '0': 200,
 }
+
+# Idea 2
+# with 102 coins combination is 100x1p & 2x50p
+# with 90 coins (90/102 == 2.22) (78*2p)156 + 27()+ (10p 5p 1p) 17     
+# Divide 200 in the number of coins (ex. 200/102 coins == 1.9)
+    # If division is one of our coins fill bag with that one, if not pick the
+    # value that follows our division downwards
+
+# Idea 3
+#
