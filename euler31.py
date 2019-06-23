@@ -6,14 +6,6 @@
 # 1×£1 + 1×50p + 2×20p + 1×5p + 1×2p + 3×1p
 # How many different ways can £2 be made using any number of coins?
 
-# idea.
-# start with one coin and upwards
-
-# case 3
-# Pick the largest that is <= to the value
-# Pick again. If == 2 break and continue. If larger, start from the next coin all over
-# If smaller try picking next coin
-
 # How do we know when a number of coins has reached all its possible combinations?
 # There should only be one combination for a determinate number of coins ?
 PENCE_VALUE_MAPPING = {
@@ -83,14 +75,3 @@ for i in range(5):
     print ('combination: {} for {} coins, adds: {}'.format(combination, i+1, coin_addition))
     if combination:
         result+=1
-
-
-# Idea 2
-# with 102 coins combination is 100x1p & 2x50p
-# with 90 coins (90/200 == 2.22) (78*2p)156 + 27()+ (10p 5p 2p) 17
-# Divide 200 in the number of coins (ex. 200/102 coins == 1.9)
-    # If division is one of our coins fill bag with that one, if not pick the
-    # value that follows our division downwards
-
-# Idea 3
-#
